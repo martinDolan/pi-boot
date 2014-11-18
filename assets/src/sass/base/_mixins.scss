@@ -6,3 +6,21 @@
 			@content;
 		}
 }
+
+@mixin small-screen {
+  @include respond-min($small-screen){
+    @content;
+  }
+}
+
+@mixin medium-screen {
+  @include respond-min($medium-screen){
+    @content;
+  }
+}
+
+@mixin large-screen {
+  @include respond-min($large-screen){
+    @content;
+  }
+}
